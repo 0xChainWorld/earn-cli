@@ -1,0 +1,29 @@
+{
+  "name": "earn-cli",
+  "version": "1.0.0",
+  "description": "AI-powered DeFi yield CLI — discover, compare, deposit, all from your terminal.",
+  "module": "src/index.ts",
+  "type": "module",
+  "bin": {
+    "earn": "src/index.ts"
+  },
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun run --watch src/index.ts"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.88.0",
+    "chalk": "^5.6.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^14.0.3",
+    "earn": "^1.0.2",
+    "ora": "^9.3.0"
+  }
+}
